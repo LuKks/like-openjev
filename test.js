@@ -5,7 +5,7 @@ if (!process.env.OPENJEV_API_KEY) {
   process.loadEnvFile()
 }
 
-test.solo('ask returns an answer', async function (t) {
+test('ask returns an answer', async function (t) {
   const jev = new OpenJev()
 
   const response = await jev.ask('My card was charged twice. Please help ASAP.', {
