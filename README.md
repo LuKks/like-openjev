@@ -13,7 +13,9 @@ https://openjev.sh
 ```js
 import OpenJev from 'like-openjev'
 
-const jev = new OpenJev()
+const jev = new OpenJev({
+  apiKey: process.env.OPENJEV_API_KEY
+})
 
 const response = await jev.ask('My card was charged twice. Please help ASAP.', {
   urgent: {
@@ -165,7 +167,7 @@ try {
 }
 ```
 
-Request errors use `ErrorJEV` and may include `status`, `body`, and `headers`.
+Error codes:
 
 - `API_CONNECTION_ERROR`: the API could not be reached.
 - `BAD_REQUEST_ERROR`: HTTP 400.
