@@ -1,6 +1,6 @@
 {
   "name": "like-openjev",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Official JavaScript library for the OpenJEV API",
   "main": "index.js",
   "scripts": {
