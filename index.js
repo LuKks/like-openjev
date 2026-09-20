@@ -32,10 +32,6 @@ module.exports = class OpenJev {
   }
 
   async request (pathname, body) {
-    if (!this.apiKey) {
-      throw new ErrorJEV('API key is required', 'AUTHENTICATION_ERROR')
-    }
-
     let response = null
 
     try {
